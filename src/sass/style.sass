@@ -13,7 +13,7 @@
 //<ОБОЛОЧКА>=============================================================================================================
 .wrapper
   width: 100%
-  min-height: 100%
+  min-height: 100vh
   overflow: hidden
 
 //</ОБОЛОЧКА>============================================================================================================
@@ -23,20 +23,26 @@
   max-width: $maxWidth + px
   margin: 0 auto
   width: 100%
-
+  
   @media (max-width: $md1+px)
-    max-width: 962px
+    max-width: 1450px
 
   @media (max-width: $md2+px)
-    max-width: 738px
+    max-width: 1180px
 
   @media (max-width: $md3+px)
+    max-width: 962px
+
+  @media (max-width: $md4+px)
+    max-width: 738px
+
+  @media (max-width: $md5+px)
     max-width: 530px
 
-  @media (max-width: $md4+px)
+  @media (max-width: $md6+px)
     max-width: 440px
 
-  @media (max-width: $md4+px)
+  @media (max-width: $md7+px)
     max-width: 100%
     padding: 0 15px
 
