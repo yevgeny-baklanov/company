@@ -1,4 +1,9 @@
-@media (max-width: 1480px) 
+@media (max-width: 1710px)
+    .main-banner__heading
+        span
+            font-size: 220px
+
+@media (max-width: 1480px)
     .header
         &__subtitle
             margin-left: 60px
@@ -11,7 +16,16 @@
         &__icon
             margin-left: 35px
 
-@media (max-width: 992px) 
+    .main-banner__heading
+        span
+            font-size: 180px
+
+@media (max-width: 1210px)
+    .main-banner__heading
+        span
+            font-size: 140px
+
+@media (max-width: 992px)
     .header
         &__wrap
             justify-content: space-between
@@ -26,8 +40,44 @@
         &__icon
             margin-left: 0
 
-@media (max-width: 768px) 
+    .main-banner
+        height: 400px
+        &__heading
+            span
+                font-size: 110px
+                &:first-child
+                    margin: 0 0 0 -17px
+
+@media (max-width: 768px)
     .header
         &__subtitle
             display: none
+
+    .main-banner
+        background-image: url('../img/main-banner.png')
+        background-repeat: no-repeat
+        background-attachment: fixed
+        background-position: center
+        background-size: cover
+        &__wrap
+            background-image: none
+        &__heading
+            span
+                font-size: 80px
+
+@media (max-width: 568px)
+    .main-banner
+        &__heading
+            span
+                font-size: 65px
+                &:last-child
+                    margin: 0 0 0 18px
+
+@media (max-width: 470px)
+    .main-banner
+        &__heading
+            span
+                font-size: 45px
+                &:first-child
+                    margin: 0 0 0 5px
 
