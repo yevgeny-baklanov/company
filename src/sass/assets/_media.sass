@@ -3,6 +3,10 @@
         span
             font-size: 220px
 
+    .skills
+        &__descr-block
+            margin: -73px 0 0 0
+
 @media (max-width: 1480px)
     .header
         &__subtitle
@@ -20,10 +24,30 @@
         span
             font-size: 180px
 
+    .skills
+        &__descr-block
+            max-width: 600px
+
+    .skills-preview-block
+        &__elem
+            max-width: 30%
+
 @media (max-width: 1210px)
     .main-banner__heading
         span
             font-size: 140px
+
+    .skills
+        &__wrap
+            display: flex
+            flex-direction: column
+            align-items: center
+        &__descr-block
+            max-width: 100%
+            margin: 0
+            padding: 75px 72px 75px 80px
+        &__preview-block
+            width: 100%
 
 @media (max-width: 992px)
     .header
@@ -65,6 +89,13 @@
             span
                 font-size: 80px
 
+    .skills
+        &__descr-block
+            padding: 45px 50px 45px 50px
+            &::after
+                top: 35px
+                right: 35px
+
 @media (max-width: 568px)
     .main-banner
         &__heading
@@ -81,3 +112,7 @@
                 &:first-child
                     margin: 0 0 0 5px
 
+    .skills
+        &__descr-block
+            button
+                padding: 18px 40px
