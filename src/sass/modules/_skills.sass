@@ -1,0 +1,62 @@
+.skills
+    &__wrap
+        display: flex
+        align-items: end
+    &__descr-block
+        position: relative
+        max-width: 750px
+        margin: -73px 0 0 90px
+        padding: 75px 72px 75px 80px
+        background: #14161B
+        p
+            position: relative
+            margin: 0 0 47px 0
+            font-weight: 400
+            font-size: 24px
+            line-height: 160%
+            color: #FFFFFF
+            z-index: 3
+        button
+            display: flex
+            align-items: center
+            justify-content: center
+            padding: 18px 84px
+            font-weight: 500
+            font-size: 17px
+            line-height: 20px
+            color: #FFFFFF
+            background: #DA1648
+            border-radius: 35px
+            border: none
+        &::after
+            content: ''
+            position: absolute
+            top: 56px
+            right: 65px
+            z-index: 2
+            width: 125px
+            height: 125px
+            background-image: url('../img/quote.svg')
+            background-repeat: no-repeat
+            background-position: center
+            background-size: cover
+    &__preview-block
+        flex-grow: 1
+        &>div
+            display: flex
+            align-items: center
+            justify-content: space-around
+            padding: 40px 0
+        &>hr
+            height: 2px
+            margin: 0 auto 0 auto
+            background: #E9E9E9
+            border: none
+            &:first-child
+                width: 100%
+            &:last-child
+                width: 73%
+                margin: 0 auto 0 0
+
+// .skills-preview-block
+//     &__elem

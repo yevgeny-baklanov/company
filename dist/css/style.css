@@ -74,6 +74,10 @@
   }
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-family: "Gilroy";
   font-style: normal;
@@ -202,6 +206,75 @@ a {
 }
 .main-banner__heading span:last-child {
   margin: 0 0 0 38px;
+}
+
+.skills__wrap {
+  display: flex;
+  align-items: end;
+}
+.skills__descr-block {
+  position: relative;
+  max-width: 750px;
+  margin: -73px 0 0 90px;
+  padding: 75px 72px 75px 80px;
+  background: #14161B;
+}
+.skills__descr-block p {
+  position: relative;
+  margin: 0 0 47px 0;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 160%;
+  color: #FFFFFF;
+  z-index: 3;
+}
+.skills__descr-block button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px 84px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  color: #FFFFFF;
+  background: #DA1648;
+  border-radius: 35px;
+  border: none;
+}
+.skills__descr-block::after {
+  content: "";
+  position: absolute;
+  top: 56px;
+  right: 65px;
+  z-index: 2;
+  width: 125px;
+  height: 125px;
+  background-image: url("../img/quote.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.skills__preview-block {
+  flex-grow: 1;
+}
+.skills__preview-block > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 40px 0;
+}
+.skills__preview-block > hr {
+  height: 2px;
+  margin: 0 auto 0 auto;
+  background: #E9E9E9;
+  border: none;
+}
+.skills__preview-block > hr:first-child {
+  width: 100%;
+}
+.skills__preview-block > hr:last-child {
+  width: 73%;
+  margin: 0 auto 0 0;
 }
 
 @media (max-width: 1710px) {
