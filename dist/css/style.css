@@ -1,0 +1,292 @@
+@font-face {
+  font-family: "Gilroy";
+  font-display: swap;
+  src: url("../fonts/Gilroy-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  font-display: swap;
+  src: url("../fonts/Gilroy-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  font-display: swap;
+  src: url("../fonts/Gilroy-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  font-display: swap;
+  src: url("../fonts/Gilroy-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1680px;
+  margin: 0 auto;
+  width: 100%;
+}
+@media (max-width: 1710px) {
+  .container {
+    max-width: 1450px;
+  }
+}
+@media (max-width: 1480px) {
+  .container {
+    max-width: 1180px;
+  }
+}
+@media (max-width: 1210px) {
+  .container {
+    max-width: 962px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 738px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 530px;
+  }
+}
+@media (max-width: 568px) {
+  .container {
+    max-width: 440px;
+  }
+}
+@media (max-width: 470px) {
+  .container {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+}
+
+html {
+  font-family: "Gilroy";
+  font-style: normal;
+  line-height: 150%;
+  color: #000000;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.header__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  padding: 45px 0;
+}
+.header__logo {
+  font-weight: 700;
+  font-size: 36px;
+}
+.header__subtitle {
+  margin-left: 90px;
+  min-width: fit-content;
+}
+.header__navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: auto;
+}
+.header__menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__contact {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-left: 60px;
+  padding: 14px 75px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #14161B;
+  white-space: nowrap;
+  border: 1px solid #14161B;
+  border-radius: 35px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.header-menu__link {
+  display: inline-block;
+  margin-left: 60px;
+  font-weight: 600;
+  font-size: 15px;
+  white-space: nowrap;
+}
+
+.burger__icon {
+  position: relative;
+  display: flex;
+  align-items: start;
+  width: 28px;
+  height: 12px;
+  margin-left: 65px;
+  cursor: pointer;
+}
+.burger__icon span {
+  width: 100%;
+  height: 2px;
+  background: #14161B;
+}
+.burger__icon::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: block;
+  width: 55%;
+  height: 2px;
+  background: #14161B;
+}
+.burger__menu {
+  display: none;
+}
+.burger-menu__link {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 15px;
+  white-space: nowrap;
+}
+
+.main-banner {
+  height: 600px;
+}
+.main-banner .container {
+  height: 100%;
+}
+.main-banner__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/main-banner.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.main-banner__heading span {
+  display: block;
+  font-weight: 700;
+  font-size: 250px;
+  line-height: 74.5%;
+  color: #FFFFFF;
+}
+.main-banner__heading span:first-child {
+  margin: 0 0 0 -33px;
+}
+.main-banner__heading span:last-child {
+  margin: 0 0 0 38px;
+}
+
+@media (max-width: 1710px) {
+  .main-banner__heading span {
+    font-size: 220px;
+  }
+}
+@media (max-width: 1480px) {
+  .header__subtitle {
+    margin-left: 60px;
+  }
+  .header__contact {
+    margin-left: 30px;
+  }
+  .header__menu {
+    display: none;
+  }
+  .burger__icon {
+    margin-left: 35px;
+  }
+  .main-banner__heading span {
+    font-size: 180px;
+  }
+}
+@media (max-width: 1210px) {
+  .main-banner__heading span {
+    font-size: 140px;
+  }
+}
+@media (max-width: 992px) {
+  .header__wrap {
+    justify-content: space-between;
+  }
+  .header__subtitle {
+    margin-left: 0;
+    flex-grow: 1;
+    text-align: center;
+  }
+  .header__contact {
+    display: none;
+  }
+  .burger__icon {
+    margin-left: 0;
+  }
+  .main-banner {
+    height: 400px;
+  }
+  .main-banner__heading span {
+    font-size: 110px;
+  }
+  .main-banner__heading span:first-child {
+    margin: 0 0 0 -17px;
+  }
+}
+@media (max-width: 768px) {
+  .header__subtitle {
+    display: none;
+  }
+  .main-banner {
+    background-image: url("../img/main-banner.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+  }
+  .main-banner__wrap {
+    background-image: none;
+  }
+  .main-banner__heading span {
+    font-size: 80px;
+  }
+}
+@media (max-width: 568px) {
+  .main-banner__heading span {
+    font-size: 65px;
+  }
+  .main-banner__heading span:last-child {
+    margin: 0 0 0 18px;
+  }
+}
+@media (max-width: 470px) {
+  .main-banner__heading span {
+    font-size: 45px;
+  }
+  .main-banner__heading span:first-child {
+    margin: 0 0 0 5px;
+  }
+}
