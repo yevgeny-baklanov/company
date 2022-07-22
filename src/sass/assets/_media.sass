@@ -63,6 +63,11 @@
     .burger
         &__icon
             margin-left: 0
+        &__menu
+            transform: translate(-100%, 106%)
+        &-menu
+            &__contact
+                display: flex
 
     .main-banner
         height: 400px
@@ -96,6 +101,11 @@
                 top: 35px
                 right: 35px
 
+    .burger
+        &-menu
+            &__subtitle
+                display: block
+
 @media (max-width: 568px)
     .main-banner
         &__heading
@@ -119,3 +129,12 @@
         &__descr-block
             button
                 padding: 18px 40px
+
+    .burger
+        &__menu
+            transform: translate(-96%, 106%)
+
+@media (max-width: 370px)
+    .burger
+        &__menu
+            transform: translate(-87%, 106%)
