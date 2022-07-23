@@ -28,9 +28,12 @@
             color: #FFFFFF
             white-space: nowrap
             background: #DA1648
+            border: solid 1px #DA1648
             border-radius: 35px
-            border: none
             cursor: pointer
+            &:hover
+                border: solid 1px #DA1648
+                background: transparent
         &::after
             content: ''
             position: absolute
@@ -50,16 +53,19 @@
             align-items: center
             justify-content: space-around
             padding: 40px 0
-        &>hr
-            height: 2px
-            margin: 0 auto 0 auto
-            background: #E9E9E9
-            border: none
             &:first-child
-                width: 100%
+                justify-content: space-between
+                padding: 40px 101px 40px 44px
+                border-bottom: solid 2.4px #E9E9E9
+                & .skills-preview-block__elem:nth-child(2)
+                    margin: 0 67px 0 0
             &:last-child
-                width: 73%
-                margin: 0 auto 0 0
-
-// .skills-preview-block
-//     &__elem
+                position: relative
+                &::after
+                    content: ''
+                    position: absolute
+                    left: 0
+                    bottom: 0
+                    height: 2px
+                    background: #E9E9E9
+                    width: 73%

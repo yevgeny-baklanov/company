@@ -1,10 +1,20 @@
 .run-line-block
+    position: relative
     padding: 80px 0 70px 0
     &>div
         display: flex
         align-items: center
         width: max-content
         animation: runLine 6s linear infinite
+    &::after
+        content: ''
+        position: absolute
+        top: 0
+        left: 50%
+        width: 82%
+        height: 2.4px
+        background: #E9E9E9
+        transform: translateX(-50%)
 
 .run-line-list
     position: relative

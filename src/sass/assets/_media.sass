@@ -1,11 +1,12 @@
 @media (max-width: 1710px)
-    .main-banner__heading
-        span
-            font-size: 220px
-
     .skills
         &__descr-block
             margin: -73px 0 0 0
+        &__preview-block
+            &>div
+                &:first-child
+                    justify-content: space-between
+                    padding: 40px 76px 40px 16px
 
 @media (max-width: 1480px)
     .header
@@ -20,23 +21,21 @@
         &__icon
             margin-left: 35px
 
-    .main-banner__heading
-        span
-            font-size: 180px
-
     .skills
         &__descr-block
             max-width: 600px
+        &__preview-block
+            &>div
+                &:first-child
+                    padding: 40px 64px 40px 16px
+                    & .skills-preview-block__elem:nth-child(2)
+                        margin: 0 41px 0 0
 
     .skills-preview-block
         &__elem
             max-width: 30%
 
 @media (max-width: 1210px)
-    .main-banner__heading
-        span
-            font-size: 140px
-
     .skills
         &__wrap
             display: flex
@@ -48,6 +47,11 @@
             padding: 75px 72px 75px 80px
         &__preview-block
             width: 100%
+            &>div
+                &:first-child
+                    padding: 40px 119px 40px 57px
+                    & .skills-preview-block__elem:nth-child(2)
+                        margin: 0 67px 0 0
 
 @media (max-width: 992px)
     .header
@@ -73,9 +77,14 @@
         height: 400px
         &__heading
             span
-                font-size: 110px
                 &:first-child
                     margin: 0 0 0 -17px
+
+    .skills
+        &__preview-block
+            &>div
+                &:first-child
+                    padding: 40px 84px 40px 24px
 
 @media (max-width: 768px)
     .header
@@ -83,16 +92,10 @@
             display: none
 
     .main-banner
-        background-image: url('../img/main-banner.png')
-        background-repeat: no-repeat
-        background-attachment: fixed
-        background-position: center
-        background-size: cover
+        .container
+            position: static
         &__wrap
             background-image: none
-        &__heading
-            span
-                font-size: 80px
 
     .skills
         &__descr-block
@@ -100,6 +103,12 @@
             &::after
                 top: 35px
                 right: 35px
+        &__preview-block
+            &>div
+                &:first-child
+                    padding: 40px 55px 40px 26px
+                    & .skills-preview-block__elem:nth-child(2)
+                        margin: 0 32px 0 0
 
     .burger
         &-menu
@@ -110,7 +119,6 @@
     .main-banner
         &__heading
             span
-                font-size: 65px
                 &:last-child
                     margin: 0 0 0 18px
 
@@ -121,7 +129,6 @@
     .main-banner
         &__heading
             span
-                font-size: 45px
                 &:first-child
                     margin: 0 0 0 5px
 
@@ -133,6 +140,15 @@
     .burger
         &__menu
             transform: translate(-96%, 106%)
+
+    .skills
+        &__preview-block
+            &>div
+                &:first-child
+                    & .skills-preview-block__elem:nth-child(2)
+                        margin: 0
+                    & .skills-preview-block__elem:nth-child(3)
+                        height: 50px
 
 @media (max-width: 370px)
     .burger
